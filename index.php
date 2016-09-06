@@ -4,10 +4,10 @@
 <head>
 
 </head>
-<body style ="background: red;">
+<body style ="background: <?php echo $_GET['color']; ?>">
 
 <div class = "CajaInicio animated bounceInRight">
-	<form method = "POST" action = "index.php" id = "FormIngreso" >
+	<form  id = "FormIngreso" >
 		 <input type = "text" name = "color" >
    		<input type = "submit">
 

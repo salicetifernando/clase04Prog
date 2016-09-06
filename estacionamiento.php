@@ -1,13 +1,7 @@
 <?php
-
-public class Estacionamiento
+class estacionamiento
 {
-	$patente =$_POST['patente'];
-	$nexo;
-
-
+	
 }
-
-
 
 ?>

@@ -7,10 +7,10 @@
 <body style ="background: <?php echo $_GET['color']; ?>">
 
 <div class = "CajaInicio animated bounceInRight">
-	<form  id = "FormIngreso" >
-		 <input type = "text" name = "color" style = "background : <?php echo $_GET['color']; ?>" >
-   		<input type = "submit" class = "MiBotonUTNMenuInicio">
-
+	<form method = "POST"  id = "FormIngreso" action = "nexo.php" >
+		 <input type = "text" name = "patente"  >
+   		<input type = "submit" name ="accion" class = "MiBotonUTNMenuInicio" value = "Estacionar">
+		<input type = "submit" name ="accion" class = "MiBotonUTNMenuInicio" value = "Salir">
 	</form>
 </div>
 </body>

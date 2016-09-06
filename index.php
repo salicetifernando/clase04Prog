@@ -4,11 +4,12 @@
 <head>
 
 </head>
-<body>
-<div class = "CajaInicio animated bounceInLeft">
-	<form method = "POST" action = "index.php" >
-	COLOR:  <input type = "text" name = "color" >
-			<input type = "submit">
+<body style ="background: red;">
+
+<div class = "CajaInicio animated bounceInRight">
+	<form method = "POST" action = "index.php" id = "FormIngreso" >
+		 <input type = "text" name = "color" >
+   		<input type = "submit">
 
 	</form>
 </div>

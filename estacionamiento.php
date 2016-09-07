@@ -8,10 +8,11 @@ class estacionamiento
 	static function Guardar($patente)
 	{
 		$fecha = date("Y-m-d H:i:s");
-		$renglon = $patente ." ". $fecha."\n";
+		$renglon = $patente ."=>". $fecha."\n";
 		$miArchivo = fopen("estacionado.txt", "a");
 		fwrite($miArchivo, $renglon);
 		fclose($miArchivo);
+
 	}
 
 	static function Leer()
@@ -22,12 +23,16 @@ class estacionamiento
 		while(!(feof($miArchivo)))
 		{
 			$renglon = fgets($miArchivo);
-			echo "<br> $renglon";
+			$auto = explode("=>", $renglon);//primer parametro el separador, y segundo el string a separar. Devuelve un array.
+
+			echo "<br> $auto[0]";
 		}
 		fclose($miArchivo);
 
 
 	}
+	//me devuelve un array.
+	//explode(delimiter, string)
 }
 
 ?>

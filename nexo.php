@@ -17,7 +17,12 @@ if($accion == "Estacionar")
 
 }else
 {
-	estacionamiento::Leer();
+
+	//$miListado = array();
+	//$miListado[] = estacionamiento::Leer(); 
+	//echo $miListado[0];
+	//var_dump($miListado);
+	estacionamiento::Sacar($patente);
 }
 
 

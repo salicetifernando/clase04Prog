@@ -10,6 +10,7 @@
 	<form method = "POST"  id = "FormIngreso" action = "nexo.php" >
 		 <input type = "text" name = "patente"  >
    		<input type = "submit" name ="accion" class = "MiBotonUTNMenuInicio" value = "Estacionar">
+   		<input type = "submit" name ="accion" class = "MiBotonUTNMenuInicio" value = "Importe">
 		<input type = "submit" name ="accion" class = "MiBotonUTNMenuInicio" value = "Salir">
 	</form>
 </div>

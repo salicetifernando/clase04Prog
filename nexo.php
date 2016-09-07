@@ -15,6 +15,9 @@ if($accion == "Estacionar")
 {
 	estacionamiento::Guardar($patente);
 
+}else
+{
+	estacionamiento::Leer();
 }
 
 
